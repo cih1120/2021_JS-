@@ -87,7 +87,7 @@ ticketAddBtn.addEventListener('click',()=>{
         obj.description = document.getElementById('ticketDect').value;
         data.push(obj);
         showData(data);
-        ticketList.value=''; //沒生效 QQ?
+        document.querySelector('.addTicketForm').reset();
     }
 })
 //==========點擊新增套票按鈕==========
